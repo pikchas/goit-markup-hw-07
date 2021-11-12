@@ -14,28 +14,28 @@
 </head>
 <body>
     <!-- Шапка -->
-    <header class="header">
+    <header class="page-header">
         <div class="container nav-container">
             <nav class="header-nav">
                 <a href="index.html" lang="en" class="logo-dark logo link"><span class="web">Web</span>Studio</a>
                 <ul class="list nav-list">
-                    <li class="nav-item"><a class="nav-link nav-link-hero current link" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-hero link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-hero link" href="">Контакты</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link nav-list__link--hero nav-list__link--current link" href="./index.html">Студия</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link nav-list__link--hero link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link nav-list__link--hero link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="list nav-contacts">
-                <li class="contact-item">
-                    <a class="nav-contact link" href="mailto:info@devstudio.com">                
-                        <svg class="icon-envelope">
+                <li class="nav-contacts__item">
+                    <a class="nav-contacts__link link" href="mailto:info@devstudio.com">                
+                        <svg class="nav-contacts__link--icon-envelope">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                      info@devstudio.com
                     </a>
                 </li>
-                <li class="contact-item">
-                    <a class="nav-contact icon-tel link" href="tel:+380961111111">
-                        <svg class="icon-smartphone">
+                <li class="nav-contacts__item">
+                    <a class="nav-contacts__link link" href="tel:+380961111111">
+                        <svg class="nav-contacts__link--icon-smartphone">
                             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -46,72 +46,72 @@
     </header>
 <!-- Контент -->
  <main>
-    <section class="hero-section conteiner overlay">
-        <h1 class="hero-tittle">Эффективные решения <br /> для вашего бизнеса</h1>
-        <button data-modal-open type="button" class="hero-button btn">Заказать услугу</button>        
+    <section class="conteiner hero-section hero-section--overlay">
+        <h1 class="hero-section__tittle">Эффективные решения <br /> для вашего бизнеса</h1>
+        <button data-modal-open type="button" class="btn hero-section--btn ">Заказать услугу</button>        
         
     </section>
 <!-- Особенности -->
-<section class="section heading-section">
+<section class="section feature-section">
     <div class="container">
-        <h2 class="heading-title">Особенности</h2>
-        <ul class="heading-list list">
-            <li class="heading-item icon-antena">
-                <div class="icon-bcg">
-                    <svg class="icon-box">
+        <h2 class="feature-section__title">Особенности</h2>
+        <ul class="feature-section__list list">
+            <li class="feature-section__item ">
+                <div class="feature-section__icon-bcg">
+                    <svg class="feature-section__icon-box">
                         <use href="./images/symbol-defs.svg#icon-antenna"></use>
                     </svg>
                 </div>
-                <h3 class="second-heading-title">Внимание к деталям</h3>
-                <p class="heading-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <h3 class="feature-section__second-title">Внимание к деталям</h3>
+                <p class="feature-section__about">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="heading-item">
-                <div class="icon-bcg">
-                    <svg class="icon-box">
+            <li class="feature-section__item">
+                <div class="feature-section__icon-bcg">
+                    <svg class="feature-section__icon-box">
                         <use href="./images/symbol-defs.svg#icon-clock"></use>
                     </svg>
                 </div>                
-                <h3 class="second-heading-title">Пунктуальность</h3>
-                <p class="heading-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h3 class="feature-section__second-title">Пунктуальность</h3>
+                <p class="feature-section__about">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="heading-item">
-                <div class="icon-bcg">
-                    <svg class="icon-box">
+            <li class="feature-section__item">
+                <div class="feature-section__icon-bcg">
+                    <svg class="feature-section__icon-box">
                         <use href="./images/symbol-defs.svg#icon-diagram"></use>
                     </svg>
                 </div>
-                <h3 class="second-heading-title">Планирование</h3>
-                <p class="heading-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="feature-section__second-title">Планирование</h3>
+                <p class="feature-section__about">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="heading-item">
-                <div class="icon-bcg">
-                    <svg class="icon-box">
+            <li class="feature-section__item">
+                <div class="feature-section__icon-bcg">
+                    <svg class="feature-section__icon-box">
                         <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                     </svg>
                 </div>
-                <h3 class="second-heading-title">Современные технологии</h3>
-                <p class="heading-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="feature-section__second-title">Современные технологии</h3>
+                <p class="feature-section__about">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </div>
     
 </section>
 <!-- Чем мы занимаемся -->
-<section class="section">
+<section class="section galary">
     <div class="container no-padding">
-        <h2 class="galary-title title-two">Чем мы занимаемся</h2>
-        <ul class="galary-list list">
-            <li class="galary-item">                
-                <img class="photo" src="./images/written-code.jpg" alt="Написание-кода" width="370">
-                <p class="galary-item-about">Десктопные приложения</p>
+        <h2 class="galary__title title-two">Чем мы занимаемся</h2>
+        <ul class="galary__list list">
+            <li class="galary__item">                
+                <img class="galary__photo" src="./images/written-code.jpg" alt="Написание-кода" width="370">
+                <p class="galary__about">Десктопные приложения</p>
             </li>
-            <li class="galary-item">                
-                <img class="photo" src="./images/adaptation-for-mobile.jpg" alt="Адаптация-под-мобильные-устройства" width="370">
-                <p class="galary-item-about">Мобильные приложения</p>                                
+            <li class="galary__item">                
+                <img class="galary__photo" src="./images/adaptation-for-mobile.jpg" alt="Адаптация-под-мобильные-устройства" width="370">
+                <p class="galary__about">Мобильные приложения</p>                                
             </li>
-            <li class="galary-item">                
-                <img class="photo" src="./images/style.jpg" alt="Стилизация-сайта" width="370">
-                <p class="galary-item-about">Дизайнерские решения</p>                                
+            <li class="galary__item">                
+                <img class="galary__photo" src="./images/style.jpg" alt="Стилизация-сайта" width="370">
+                <p class="galary__about">Дизайнерские решения</p>                                
             </li>
         </ul>
     </div>
@@ -120,9 +120,9 @@
 <!-- Наша команда -->
 <section class="section team-section">
     <div class="container">
-        <h2 class="team-title title-two">Наша команда</h2>
-        <ul class="list team-list">
-            <li class="team-item">
+        <h2 class="team-section__title title-two">Наша команда</h2>
+        <ul class="list team-section__list">
+            <li class="team-section__item">
                 <img class="foto-box" src="./images/foto-igor.jpg" alt="Игорь-Демьяненко" width="270">
                 <h3 class="second-team-title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-about">Product Designer</p>
@@ -376,7 +376,7 @@
                 </div>
                 
                 
-                <button type="submit" class="btn-sbc">
+                <button type="submit" class="btn btn--sbc">
                     Подписаться                    
                     <svg class="icon-send">
                         <use href="./images/symbol-defs.svg#icon-icon-send"></use>
@@ -438,7 +438,7 @@
                                             
                         
             </form>
-            <button type="submit" class="btn-modal">Отправить</button>
+            <button type="submit" class="btn btn--modal">Отправить</button>
         </div>
         
     </div>
