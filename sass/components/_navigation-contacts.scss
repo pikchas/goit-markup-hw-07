@@ -20,11 +20,22 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     
+    &:hover , 
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &:hover .nav-contacts__link--icon-envelope, 
+    &:focus .nav-contacts__link--icon-envelope {
+        fill: var(--accent-color);
+    }
+
+    &:hover .nav-contacts__link--icon-smartphone, 
+    &:focus .nav-contacts__link--icon-smartphone {
+        fill: var(--accent-color);
+    }
 }
-.nav-contacts__link:hover , 
-.nav-contacts__link:focus {
-    color: var(--accent-color);
-}
+
 .nav-contacts__link--icon-envelope {
     display: flex;
     align-items: center;
@@ -35,9 +46,9 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-    
-    
+        
 }
+
 .nav-contacts__link--icon-smartphone {
     display: flex;
     align-items: center;
@@ -48,14 +59,5 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-    
-    
-}
-.nav-contacts__link:hover .nav-contacts__link--icon-envelope, 
-.nav-contacts__link:focus .nav-contacts__link--icon-envelope {
-    fill: var(--accent-color);
-}
-.nav-contacts__link:hover .nav-contacts__link--icon-smartphone, 
-.nav-contacts__link:focus .nav-contacts__link--icon-smartphone {
-    fill: var(--accent-color);
+        
 }

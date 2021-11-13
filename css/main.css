@@ -103,8 +103,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn.focus {
+.btn:hover, .btn:focus {
   background-color: #188CE8;
 }
 
@@ -159,15 +158,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal__close-btn:hover .modal__icon-vector,
+.modal__close-btn:focus .modal__icon-vector {
+  fill: var(--accent-color);
+}
+
 .modal__icon-vector {
   width: 18px;
   height: 18px;
   fill: #000000;
-}
-
-.modal__close-btn:hover .modal__icon-vector,
-.modal__close-btn:focus .modal__icon-vector {
-  fill: var(--accent-color);
 }
 
 .modal__form {
@@ -221,16 +220,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   border-color: var(--accent-color);
 }
 
-.form__icon {
-  position: absolute;
-  bottom: 11px;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  fill: var(--dark);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .form__group:hover .form__icon,
 .form__group:focus-within .form__icon {
   fill: var(--accent-color);
@@ -260,14 +249,24 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-top: 20px;
 }
 
-textarea {
-  resize: none;
-}
-
 .form__group label[for="police"] {
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--dark);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea {
+  resize: none;
 }
 
 .form__checkbox-label {
@@ -303,8 +302,7 @@ textarea {
   cursor: pointer;
 }
 
-.form__box-icon-check:hover,
-.form__box-icon-check:focus {
+.form__box-icon-check:hover, .form__box-icon-check:focus {
   border-color: var(--accent-color);
 }
 
@@ -339,6 +337,14 @@ textarea {
   color: var(--primary-text-color);
 }
 
+.nav-list__link:hover::after {
+  width: 100%;
+}
+
+.nav-list__link:hover, .nav-list__link:focus {
+  color: var(--accent-color);
+}
+
 .nav-list__link--hero {
   position: relative;
 }
@@ -354,15 +360,6 @@ textarea {
   background-color: var(--accent-color);
   border-radius: 2px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-list__link:hover::after {
-  width: 100%;
-}
-
-.nav-list__link:hover,
-.nav-list__link:focus {
-  color: var(--accent-color);
 }
 
 .nav-list__link--current {
@@ -408,9 +405,18 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-contacts__link:hover,
-.nav-contacts__link:focus {
+.nav-contacts__link:hover, .nav-contacts__link:focus {
   color: var(--accent-color);
+}
+
+.nav-contacts__link:hover .nav-contacts__link--icon-envelope,
+.nav-contacts__link:focus .nav-contacts__link--icon-envelope {
+  fill: var(--accent-color);
+}
+
+.nav-contacts__link:hover .nav-contacts__link--icon-smartphone,
+.nav-contacts__link:focus .nav-contacts__link--icon-smartphone {
+  fill: var(--accent-color);
 }
 
 .nav-contacts__link--icon-envelope {
@@ -435,16 +441,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-contacts__link:hover .nav-contacts__link--icon-envelope,
-.nav-contacts__link:focus .nav-contacts__link--icon-envelope {
-  fill: var(--accent-color);
-}
-
-.nav-contacts__link:hover .nav-contacts__link--icon-smartphone,
-.nav-contacts__link:focus .nav-contacts__link--icon-smartphone {
-  fill: var(--accent-color);
 }
 
 .team-section__list {
@@ -504,9 +500,13 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--light-text-color);
 }
 
 .social-list__icon {
@@ -517,11 +517,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: var(--light-text-color);
 }
 
 .page-footer__adress {
@@ -631,15 +626,14 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-galary__list-button-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.projects-galary__button:hover,
-.projects-galary__button:focus {
+.projects-galary__button:hover, .projects-galary__button:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects-galary__list-button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .projects-galary__list {
@@ -655,8 +649,7 @@ textarea {
   box-sizing: border-box;
 }
 
-.projects-galary__box:hover,
-.projects-galary__box:focus {
+.projects-galary__box:hover, .projects-galary__box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -781,6 +774,14 @@ textarea {
   color: var(--primary-text-color);
 }
 
+.nav-list__link:hover::after {
+  width: 100%;
+}
+
+.nav-list__link:hover, .nav-list__link:focus {
+  color: var(--accent-color);
+}
+
 .nav-list__link--hero {
   position: relative;
 }
@@ -796,15 +797,6 @@ textarea {
   background-color: var(--accent-color);
   border-radius: 2px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-list__link:hover::after {
-  width: 100%;
-}
-
-.nav-list__link:hover,
-.nav-list__link:focus {
-  color: var(--accent-color);
 }
 
 .nav-list__link--current {
@@ -850,9 +842,18 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-contacts__link:hover,
-.nav-contacts__link:focus {
+.nav-contacts__link:hover, .nav-contacts__link:focus {
   color: var(--accent-color);
+}
+
+.nav-contacts__link:hover .nav-contacts__link--icon-envelope,
+.nav-contacts__link:focus .nav-contacts__link--icon-envelope {
+  fill: var(--accent-color);
+}
+
+.nav-contacts__link:hover .nav-contacts__link--icon-smartphone,
+.nav-contacts__link:focus .nav-contacts__link--icon-smartphone {
+  fill: var(--accent-color);
 }
 
 .nav-contacts__link--icon-envelope {
@@ -877,16 +878,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-contacts__link:hover .nav-contacts__link--icon-envelope,
-.nav-contacts__link:focus .nav-contacts__link--icon-envelope {
-  fill: var(--accent-color);
-}
-
-.nav-contacts__link:hover .nav-contacts__link--icon-smartphone,
-.nav-contacts__link:focus .nav-contacts__link--icon-smartphone {
-  fill: var(--accent-color);
 }
 
 .hero-section {
@@ -1130,9 +1121,13 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-clients__link:hover,
-.section-clients__link:focus {
+.section-clients__link:hover, .section-clients__link:focus {
   border-color: var(--accent-color);
+}
+
+.section-clients__link:hover .section-clients__icon-company,
+.section-clients__link:focus .section-clients__icon-company {
+  fill: var(--accent-color);
 }
 
 .section-clients__icon-company {
@@ -1142,11 +1137,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-clients__link:hover .section-clients__icon-company,
-.section-clients__link:focus .section-clients__icon-company {
-  fill: var(--accent-color);
 }
 
 .page-footer {
@@ -1186,7 +1176,7 @@ textarea {
 .footer-contact__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-text-color);
@@ -1274,15 +1264,14 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-galary__list-button-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.projects-galary__button:hover,
-.projects-galary__button:focus {
+.projects-galary__button:hover, .projects-galary__button:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects-galary__list-button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .projects-galary__list {

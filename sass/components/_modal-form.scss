@@ -20,31 +20,67 @@
     position: relative;
     display: flex;
     flex-direction: column;
-}
-.form__group label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--second-text-color);
-}
-.form__group input {
-    
-    margin: 0;
-    margin-top: 4px;
-    padding: 11px 12px 11px 42px;
-    outline: none;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__group:hover input,
-.form__group:focus-within input {
-    border-color: var(--accent-color);
-    
-}
 
+    & label {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--second-text-color);
+    }
+
+    & input {    
+        margin: 0;
+        margin-top: 4px;
+        padding: 11px 12px 11px 42px;
+        outline: none;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover input,
+    &:focus-within input {
+        border-color: var(--accent-color);
+    }
+
+    &:hover .form__icon,
+    &:focus-within .form__icon {
+        fill: var(--accent-color);
+    }
+
+    & textarea {
+        margin-top: 4px;
+        padding: 12px 16px;
+        height: 120px;
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover textarea,
+    &:focus-within textarea {
+        border-color: var(--accent-color);
+    
+    }
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    &:last-child {
+        margin-top: 20px;
+    }
+
+    & label[for="police"] {
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--second-text-color);
+    }
+}
 
 .form__icon {
     position: absolute;
@@ -56,39 +92,11 @@
     fill: var(--dark);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__group:hover .form__icon,
-.form__group:focus-within .form__icon {
-    fill: var(--accent-color);
-}
-.form__group textarea {
-    margin-top: 4px;
-    padding: 12px 16px;
-    height: 120px;
-    outline: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__group:hover textarea,
-.form__group:focus-within textarea {
-    border-color: var(--accent-color);
-    
-}
-.form__group:not(:first-child) {
-    margin-top: 10px;
-}
-.form__group:last-child {
-    margin-top: 20px;
-}
+
 textarea {
     resize: none;
 }
-.form__group label[for="police"] {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--second-text-color);
-}
+
 .form__checkbox-label {
     display: flex;
     align-items: center;
@@ -103,11 +111,12 @@ textarea {
     -moz-appearance: none;
     appearance: none;
     
+    &:checked ~ .form__box-icon-check {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }
-.form__checkbox-input:checked ~ .form__box-icon-check {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
+
 .form__box-icon-check {
     display: flex;
     align-items: center;
@@ -118,10 +127,11 @@ textarea {
     border-radius: 2px;
     background-origin: border-box;
     cursor: pointer;
-}
-.form__box-icon-check:hover,
-.form__box-icon-check:focus {
-    border-color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .form__checkbox-link {
@@ -129,6 +139,7 @@ textarea {
     line-height: 1.71;
     color: var(--accent-color);
 }
+
 .btn--modal {  
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
