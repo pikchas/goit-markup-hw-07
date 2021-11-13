@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
@@ -55,7 +55,12 @@ body {
     margin-bottom: 20px;
 }
 .title-two {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;   
     color: var(--primary-text-color);
+    margin-bottom: 50px;
 }
 .btn {
     font-family: inherit;
@@ -525,7 +530,7 @@ textarea {
 .galary {
 
 }
-.galary__title {
+/* .galary__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -533,7 +538,7 @@ textarea {
     
     color: var(--primary-text-color);
     margin-bottom: 50px;
-}
+} */
 .galary__list {
     
     display: flex;
@@ -592,7 +597,7 @@ textarea {
     background-color: #F5F4FA;
 }
 
-.team-section__title {
+/* .team-section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -600,7 +605,7 @@ textarea {
     
     color: var(--primary-text-color);
     margin-bottom: 50px;
-}
+} */
 .team-section__list {
     display: flex;
     justify-content: space-between;
@@ -681,15 +686,15 @@ textarea {
 
 /* ---------clients--------- */
 
-.section-clients__title {
+/* .section-clients__title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     
     color: var(--primary-text-color);
     margin-bottom: 50px;
-}
+} */
 .section-clients__list {
     display: flex;
     justify-content: space-between;
