@@ -193,21 +193,19 @@ body {
     
 }
 
-/* .form__input {
-    border-color: var(--accent-color);
-} */
+
 .form__icon {
     position: absolute;
     bottom: 11px;
     left: 12px;
     width: 18px;
     height: 18px;
-    
+
     fill: var(--dark);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group:hover .form__icon,
-.form-group:focus-within .form__icon {
+.form__group:hover .form__icon,
+.form__group:focus-within .form__icon {
     fill: var(--accent-color);
 }
 .form__group textarea {
@@ -274,7 +272,7 @@ textarea {
     border-color: var(--accent-color);
 }
 
-.checkbox-link {
+.form__checkbox-link {
     font-size: 14px;
     line-height: 1.71;
     color: var(--accent-color);
@@ -819,12 +817,18 @@ textarea {
 }
 /* ---------portfolio--------- */
 /* ---------buttons--------- */
-.list-button {
+.projects-galary {
+    background-color: var(--light-text-color);
+}
+.projects-galary__title {
+    display: none;
+}
+.projects-galary__button-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.project-button {
+.projects-galary__button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -843,22 +847,24 @@ textarea {
     
 
 }
-.list-button-item:not(:last-child) {
+.projects-galary__list-button-item:not(:last-child) {
     margin-right: 8px;
 }
-.project-button:hover, .project-button:focus {
+.projects-galary__button:hover, 
+.projects-galary__button:focus {
     color: var(--light-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ---------projects-galary--------- */
-.projects-list {
+
+.projects-galary__list {
     display: flex;
     flex-wrap: wrap;
     
 }
 
-.project-box {
+.projects-galary__box {
     width: 370px;
     padding-bottom: 20px;
     background-color: var(--light-text-color);
@@ -866,22 +872,23 @@ textarea {
     box-sizing: border-box;
     
 }
-.project-box:hover, .project-box:focus {
+.projects-galary__box:hover, 
+.projects-galary__box:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-box:not(:nth-child(3n + 3)) {
+.projects-galary__box:not(:nth-child(3n + 3)) {
     margin-right: 30px;
 }
-.project-box:not(:nth-child(n+7)) {
+.projects-galary__box:not(:nth-child(n+7)) {
     margin-bottom: 30px;
 }
-.tehno-kriak {
+.projects-galary__tehno-kriak {
     position: relative;
     overflow: hidden;
 }
-.tehno-kriak::before {
+.projects-galary__tehno-kriak::before {
     position: absolute;
     display: inline-block;
     content: "";
@@ -895,12 +902,12 @@ textarea {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     
 }
-.tehno-kriak-link:hover .tehno-kriak::before {
+.projects-galary__link:hover .projects-galary__tehno-kriak::before {
     
     transform:translateY(0);
 }
 
-.text-tehno-kriak {
+.projects-galary__text {
     
     position: absolute;
     top: 0;
@@ -917,15 +924,15 @@ textarea {
     
     opacity: 0;
 }
-.tehno-kriak-link:hover .text-tehno-kriak {
+.projects-galary__link:hover .projects-galary__text {
     opacity: 1;
 }
-.about-project-box {
+.about-box {
     padding-top: 20px;
     padding-left: 24px;
 }
 
-.project-box-title {
+.about-box__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -934,7 +941,7 @@ textarea {
     margin-bottom: 4px;
     
 }
-.project-about {
+.about-box__about {
     font-size: 16px;
     line-height: 1.87;
     
