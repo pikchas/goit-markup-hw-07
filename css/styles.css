@@ -120,7 +120,7 @@ body {
     
 }
 
-.close-modal-btn {
+.modal__close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -136,23 +136,23 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.icon-vector {
+.modal__icon-vector {
     width: 18px;
     height: 18px;
     
     fill: #000000;
 }
-.close-modal-btn:hover .icon-vector,
-.close-modal-btn:focus .icon-vector {
+.modal__close-btn:hover .modal__icon-vector,
+.modal__close-btn:focus .modal__icon-vector {
     fill: var(--accent-color);
 }
-.modal-form {
+.modal__form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.modal-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -164,18 +164,18 @@ body {
     width: 448px;
     margin-top: 12px;
 }
-.form-group {
+.form__group {
     position: relative;
     display: flex;
     flex-direction: column;
 }
-.form-group label {
+.form__group label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--second-text-color);
 }
-.form-group input {
+.form__group input {
     
     margin: 0;
     margin-top: 4px;
@@ -187,29 +187,30 @@ body {
     cursor: pointer;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group:hover input,
-.form-group:focus-within input {
+.form__group:hover input,
+.form__group:focus-within input {
     border-color: var(--accent-color);
     
 }
 
-.input {
+/* .form__input {
     border-color: var(--accent-color);
-}
-.icon-form {
+} */
+.form__icon {
     position: absolute;
     bottom: 11px;
     left: 12px;
     width: 18px;
     height: 18px;
+    
     fill: var(--dark);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group:hover .icon-form,
-.form-group:focus-within .icon-form {
+.form-group:hover .form__icon,
+.form-group:focus-within .form__icon {
     fill: var(--accent-color);
 }
-.form-group textarea {
+.form__group textarea {
     margin-top: 4px;
     padding: 12px 16px;
     height: 120px;
@@ -219,26 +220,26 @@ body {
     cursor: pointer;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-group:hover textarea,
-.form-group:focus-within textarea {
+.form__group:hover textarea,
+.form__group:focus-within textarea {
     border-color: var(--accent-color);
     
 }
-.form-group:not(:first-child) {
+.form__group:not(:first-child) {
     margin-top: 10px;
 }
-.form-group:last-child {
+.form__group:last-child {
     margin-top: 20px;
 }
 textarea {
     resize: none;
 }
-.form-group label[for="police"] {
+.form__group label[for="police"] {
     font-size: 14px;
     line-height: 1.71;
     color: var(--second-text-color);
 }
-.checkbox-label {
+.form__checkbox-label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,17 +248,17 @@ textarea {
     line-height: 1.71;
     color: var(--second-text-color);
 }
-.checkbox {
+.form__checkbox-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     
 }
-.checkbox:checked ~ .box-icon-check {
+.form__checkbox-input:checked ~ .form__box-icon-check {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
-.box-icon-check {
+.form__box-icon-check {
     display: flex;
     align-items: center;
     width: 16px;
@@ -268,8 +269,8 @@ textarea {
     background-origin: border-box;
     cursor: pointer;
 }
-.box-icon-check:hover,
-.box-icon-check:focus {
+.form__box-icon-check:hover,
+.form__box-icon-check:focus {
     border-color: var(--accent-color);
 }
 
@@ -785,12 +786,12 @@ textarea {
 .subscribe {
     margin-left: auto;
 }
-.topic-form {
+.subscribe__topic-form {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.form-footer input {
+.subscribe__input input {
     font-size: 16px;
     line-height: 1.25;
     color: var(--light-text-color);
@@ -803,16 +804,14 @@ textarea {
     padding-left: 16px;
     
 }
-.btn--sbc {
+.subscribe__btn {
     padding: 10px 28px;
     margin-left: 12px;
     width: 200px;
     height: 50px;
 }
-.btn--sbc:hover, .btn--sbc:focus {
-    background-color: #188CE8;
-}
-.icon-send {
+
+.subscribe__icon-send {
     display: inline-flex;
     width: 24px;
     height: 24px;

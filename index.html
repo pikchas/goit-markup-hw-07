@@ -369,16 +369,14 @@
         </div>
         <div class="subscribe">
             <h3 class="footer-contact__title">подпишитесь на рассылку</h3>
-            <form class="topic-form js-speaker-form">
-                <div class="form-footer">
+            <form class="subscribe__topic-form js-speaker-form">
+                <div class="subscribe__input">
                     <label for="email"></label>
                     <input type="email" name="email" placeholder="E-mail" id="email">
-                </div>
-                
-                
-                <button type="submit" class="btn btn--sbc">
+                </div>                
+                <button type="submit" class="btn subscribe__btn">
                     Подписаться                    
-                    <svg class="icon-send">
+                    <svg class="subscribe__icon-send">
                         <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                     </svg>
                     
@@ -391,44 +389,44 @@
 </footer>
 
 <div data-modal class="backdrop is-hidden">
-    <div class="modal modal-animation">
-        <button data-modal-close class="close-modal-btn" type="button">
-            <svg class="icon-vector">
+    <div class="modal">
+        <button data-modal-close class="modal__close-btn" type="button">
+            <svg class="modal__icon-vector">
                 <use href="./images/symbol-defs.svg#icon-vector"></use>
             </svg>
         </button>
-        <div class="modal-form">
-            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="modal__form">
+            <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="form js-speaker-form">
-                <div class="form-group">
+                <div class="form__group">
                     <label for="user" >Имя</label>
-                    <input class="input" type="text" name="inform-user" id="user" required>
-                    <svg class="icon-form">
+                    <input class="form__input" type="text" name="inform-user" id="user" required>
+                    <svg class="form__icon">
                         <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
                     </svg>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="tel">Телефон</label>
-                    <input class="input" type="tel" name="inform-user" id="tel" required>
-                    <svg class="icon-form">
+                    <input class="form__input" type="tel" name="inform-user" id="tel" required>
+                    <svg class="form__icon">
                         <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
                     </svg>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="mail">Почта</label>
-                    <input class="input" type="email" name="inform-user" id="mail" required>
-                    <svg class="icon-form">
+                    <input class="form__input" type="email" name="inform-user" id="mail" required>
+                    <svg class="form__icon">
                         <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
                     </svg>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="comment">Комментарий</label>
-                    <textarea class="input" name="inform-user" id="comment"  rows="8" placeholder="Введите текст"></textarea>
+                    <textarea class="form__input" name="inform-user" id="comment"  rows="8" placeholder="Введите текст"></textarea>
                 </div>
                                     
-                <label class="checkbox-label" >
-                    <input class="checkbox" type="checkbox" name="police" >
-                    <span class="box-icon-check">
+                <label class="form__checkbox-label" >
+                    <input class="form__checkbox-input" type="checkbox" name="police" >
+                    <span class="form__box-icon-check">
                         <svg class="icon-check">
                             <use href="./images/symbol-defs.svg#icon-icon-check"></use>
                         </svg>
