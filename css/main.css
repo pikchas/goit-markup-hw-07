@@ -1082,9 +1082,13 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--light-text-color);
 }
 
 .social-list__icon {
@@ -1095,11 +1099,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: var(--light-text-color);
 }
 
 .section-clients__list {
@@ -1287,8 +1286,7 @@ textarea {
   box-sizing: border-box;
 }
 
-.projects-galary__box:hover,
-.projects-galary__box:focus {
+.projects-galary__box:hover, .projects-galary__box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1305,7 +1303,7 @@ textarea {
   overflow: hidden;
 }
 
-.projects-galary__tehno-kriak::before {
+.projects-galary__tehno-kriak .projects-galary__tehno-kriak::before {
   position: absolute;
   display: inline-block;
   content: "";
