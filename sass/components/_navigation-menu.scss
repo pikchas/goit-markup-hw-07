@@ -1,13 +1,13 @@
-.nav-list {
+.header-nav__list {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.nav-list__item:not(:last-child) {
+.header-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-list__link {
+.header-nav__link {
     position: relative;
     font-weight: 500;
     font-size: 14px;
@@ -23,7 +23,7 @@
         color: var(--accent-color);
     }
 }
-.nav-list__link--hero {
+.header-nav__link--hero {
     position: relative;
 
     &::after {
@@ -41,7 +41,7 @@
 }
 
 
-.nav-list__link--current {
+.header-nav__link--current {
     position: relative;
 
     &::after {
@@ -57,6 +57,6 @@
     }
 }
 
-.nav-list.nav-list__item:not(:last-child) {
+.header-nav__list.header-nav__item:not(:last-child) {
     margin-right: 50px;
 }
